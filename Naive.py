@@ -5,13 +5,14 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score,confusion_matrix,precision_score,recall_score
 
 
-m=pd.read_csv('document.csv',names=['messagge','label'])
+
+msg=pd.read_csv('/content/document.csv',names=['message','label'])
 print("Total instance of data set:",m.shape[0])
-m['labelnum']=ms.label.map({'pos':1,'neg':0})
-x=m.message
-y=m.labelnum
+msg['labelnum']=msg.label.map({'pos':1,'neg':0})
+X=msg.message
+y=msg.labelnum
 Xtrain,Xtest,ytrain,ytest=train_test_split(X,y)
-count_v=countVectorizer()
+count_v=CountVectorizer()
 
 
 Xtrain_dtm=count_v.fit_transform(Xtrain)
