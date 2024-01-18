@@ -11,7 +11,7 @@ m['labelnum']=ms.label.map({'pos':1,'neg':0})
 x=m.message
 y=m.labelnum
 Xtrain,Xtest,ytrain,ytest=train_test_split(X,y)
-count_v=coutVectorizer()
+count_v=countVectorizer()
 
 
 Xtrain_dtm=count_v.fit_transform(Xtrain)
