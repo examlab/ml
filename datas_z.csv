@@ -1,0 +1,7 @@
+,,,,,,,
+,income,recreation,job,status,age,home-owner,risk
+0,medium,skiing,design,single,twenties,no,highRisk
+1,high,golf,trading,married,forties,yes,lowRisk
+2,low,speedway,transport,married,thirties,yes,medRisk
+3,medium,football,banking,single,thirties,yes,lowRisk
+4,high,flying,media,married,fifties,yes,highRisk
