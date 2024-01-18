@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score,confusion_matrix,precision_score,reca
 
 
 
-msg=pd.read_csv('/content/document.csv',names=['message','label'])
+msg=pd.read_csv('document.csv',names=['message','label'])
 print("Total instance of data set:",m.shape[0])
 msg['labelnum']=msg.label.map({'pos':1,'neg':0})
 X=msg.message
