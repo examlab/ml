@@ -17,9 +17,9 @@ clf = MLPClassifier(solver='lbfgs', alpha=1e-5,hidden_layer_sizes=(5, 2), random
 clf.fit(Xtrain_dm, ytrain)
 pred = clf.predict(Xtest_dm)
 print(pred)
-print(accuracy_score(ytest,pred))
-print(confusion_matrix(ytest,pred))
-print(precision_score(ytest,pred))
-print(recall_score(ytest,pred))
+print('Accuracy: ',accuracy_score(y,pred))
+print('Confusion matrix: ',confusion_matrix(y,pred))
+print('Precision: ',precision_score(y,pred))
+print('Recall: ',recall_score(y,pred))
 
 
