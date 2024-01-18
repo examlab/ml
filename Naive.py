@@ -18,9 +18,9 @@ clf.fit(Xtrain_dtm,ytrain)
 MultinomialNB()
 pred=clf.predict(Xtest_dtm)
 print(pred)
-print(accuracy_score(ytest,pred))
-print(confusion_matrix(ytest,pred))
-print(precision_score(ytest,pred))
-print(recall_score(ytest,pred))
+print('Accuracy: ',accuracy_score(y,pred))
+print('Confusion matrix: ',confusion_matrix(y,pred))
+print('Precision: ',precision_score(y,pred))
+print('Recall: ',recall_score(y,pred))
 
 
