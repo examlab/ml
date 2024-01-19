@@ -17,7 +17,7 @@ count_v=CountVectorizer()
 
 Xtrain_dm=count_v.fit_transform(Xtrain)
 Xtest_dm=count_v.transform(Xtest)
-df=pd.DataFrame(Xtrain_dtm.toarray(),columns=count_v.get_feature_names_out())
+df=pd.DataFrame(Xtrain_dm.toarray(),columns=count_v.get_feature_names_out())
 clf=MultinomialNB()
 clf.fit(Xtrain_dm,ytrain)
 MultinomialNB()
