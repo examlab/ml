@@ -27,7 +27,7 @@ pred=clf.predict(Xtest_dm)
 print(pred)
 
 
-print('Accuracy: ',accuracy_score(y,pred))
-print('Confusion matrix: ',confusion_matrix(y,pred))
-print('Precision: ',precision_score(y,pred))
-print('Recall: ',recall_score(y,pred))
+print('Accuracy: ',accuracy_score(ytest,pred))
+print('Confusion matrix: ',confusion_matrix(ytest,pred))
+print('Precision: ',precision_score(ytest,pred))
+print('Recall: ',recall_score(ytest,pred))
